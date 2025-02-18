@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PTPMQLMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f63b11ba3798e888c99ed7483caf7e1cc310bd9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+046942eac38cfece81d781b45cb74f0dc2402d98")]
 [assembly: System.Reflection.AssemblyProductAttribute("PTPMQLMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PTPMQLMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
