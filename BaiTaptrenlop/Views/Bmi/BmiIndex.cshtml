@@ -1,0 +1,12 @@
+
+<h2>Tính chỉ số BMI</h2>
+<form asp-action="BmiIndex">
+    <label>Họ và Tên:</label>
+    <input type="text" name="HovaTen" />
+    <label>Cân nặng (kg):</label>
+    <input type="text" name="CanNang" />
+    <label>Chiều cao (m):</label>
+    <input type="text" name="ChieuCao" />
+    <button type="submit">Tính BMI</button>
+</form>
+<p>@ViewBag.Message</p>
