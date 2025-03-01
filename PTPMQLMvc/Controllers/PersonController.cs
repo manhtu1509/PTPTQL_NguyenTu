@@ -78,7 +78,8 @@ public class PersonController : Controller
     public async Task<IActionResult>Delete(string id);
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(string id)
+    public async Task<IActionResult> DeleteConfirmed(string id)///Manhj tu ne
+    
     private bool PersonExists(string id);
     [HttpPost]
     

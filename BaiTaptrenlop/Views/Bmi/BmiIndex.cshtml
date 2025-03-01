@@ -1,12 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BaiTaptrenlop/Views/Bmi/BMI.css">
+    <title>Tinsnh chỉ so BIM</title>
 
-<h2>Tính chỉ số BMI</h2>
-<form asp-action="BmiIndex">
-    <label>Họ và Tên:</label>
-    <input type="text" name="HovaTen" />
-    <label>Cân nặng (kg):</label>
-    <input type="text" name="CanNang" />
-    <label>Chiều cao (m):</label>
-    <input type="text" name="ChieuCao" />
-    <button type="submit">Tính BMI</button>
-</form>
-<p>@ViewBag.Message</p>
+</head>
+<body>
+     <h2>Tính chỉ số BMI</h2>
+    
+    <form asp-action="BmiIndex">
+        <label class="hoten">Họ và Tên:</label>
+        <input type="text" name="HovaTen" />
+        <label class="cannang">Cân nặng (kg):</label>
+        <input type="text" name="CanNang" />
+        <label class="chieucao">Chiều cao (m):</label>
+        <input type="text" name="ChieuCao" />
+        <button type="submit">Tính BMI</button>
+    </form>
+        <p>@ViewBag.Message</p>
+    
+</body>
+</html>
+
+   
+
