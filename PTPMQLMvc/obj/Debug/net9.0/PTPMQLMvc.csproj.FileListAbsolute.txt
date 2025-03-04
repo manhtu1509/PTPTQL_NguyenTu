@@ -14,7 +14,6 @@ D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\PTPMQLMvc.csproj.CoreCompileInputs.c
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\PTPMQLMvc.MvcApplicationPartsAssemblyInfo.cache
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\PTPMQLMvc.RazorAssemblyInfo.cache
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\PTPMQLMvc.RazorAssemblyInfo.cs
-D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\PTPMQLMvc.sourcelink.json
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\scopedcss\bundle\PTPMQLMvc.styles.css
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\scopedcss\projectbundle\PTPMQLMvc.bundle.scp.css

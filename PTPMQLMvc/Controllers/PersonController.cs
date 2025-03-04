@@ -20,18 +20,17 @@ public class PersonController : Controller
     {
         return View();
     }
-    public IActionResult Index(){
-        return View();
-    }
+   
+    
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult>create([Bind("Person,Fullname,Address")] Person person)
+    public async Task<IActionResult> Create([Bind("PersonId, FullName, Address")] Person person)
     {
         if (ModelState.IsValid)
         {
             _context.Add(person);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(index));
+            return RedirectToAction(nameof(Index));
 
         }
         return View(person);
@@ -40,6 +39,11 @@ public class PersonController : Controller
     public async Task<IActionResult>Edit(string id)
     {
         if (id == null || _context.Person ==  null)
+        {
+            return NotFound();
+        }
+        var person = await _context.Person.FindAsync(id);
+        if (person == null)
         {
             return NotFound();
         }
@@ -75,25 +79,43 @@ public class PersonController : Controller
         }
         return View(person);//đã đến slide 52
     }
-    public async Task<IActionResult>Delete(string id);
+    public async Task<IActionResult> Delete(string id)
+    {
+        if (id == null || _context.Person == null)
+        {
+            return NotFound();
+        }
+        var person = await _context.Person.FirstOrDefaultAsync(m => m.PersonId == id);
+        if (person == null)
+        {
+            return NotFound();
+        }
+        return View(person);
+    }
+
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(string id)///Manhj tu ne
-    
-    private bool PersonExists(string id);
-    [HttpPost]
-    
-    private readonly ILogger<PersonController> _logger;
-
-    public PersonController(ILogger<PersonController> logger)
+    public async Task<IActionResult> DeleteConfirmed(string id)
     {
-        _logger = logger;
+        if (_context.Person == null)
+        {
+            return Problem("Entity set 'ApplicationDbContext.Person'is null.");
+        }
+        var person = await _context.Person.FindAsync(id);
+        if (person !=null)
+        {
+            _context.Person.Remove(person);
+        }
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
     }
-
-    public IActionResult PersonIndex()
+    
+    private bool PersonExists(string id)
     {
-        return View();
+        return (_context.Person?.Any(e => e.PersonId == id)).GetValueOrDefault();
     }
+    
+
 
     public IActionResult Privacy()
     {
@@ -105,4 +127,4 @@ public class PersonController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-}
+}//lam den slide 56
