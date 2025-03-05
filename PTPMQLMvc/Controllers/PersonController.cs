@@ -51,7 +51,7 @@ public class PersonController : Controller
     }
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult>Edit(string id, [Bind("PersonId, Fullname, Address")] Person person)
+    public async Task<IActionResult>Edit(string id, [Bind("PersonId, FullName, Address")] Person person)
     {
         if (id != person.PersonId)
         {
@@ -114,10 +114,7 @@ public class PersonController : Controller
     {
         return (_context.Person?.Any(e => e.PersonId == id)).GetValueOrDefault();
     }
-    
-
-
-    public IActionResult Privacy()
+     public IActionResult Privacy()
     {
         return View();
     }
