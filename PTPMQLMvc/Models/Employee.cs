@@ -1,8 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace PTPMQLMvc.Models
 {
-    public class Employee : Person
+    [Table("Employee")]
+    public class Employee 
     {
-        public string Employeeid {get; set; }
-        public int Age {get; set;}
+        [Key]
+        public string? EmployeeId { get; set; }
+        public int Age { get; set; }
     }
 }
