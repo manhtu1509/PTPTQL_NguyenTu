@@ -14,7 +14,7 @@ namespace PTPMQLMvc.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.2");
+            modelBuilder.HasAnnotation("ProductVersion", "8.0.3");
 
             modelBuilder.Entity("PTPMQLMvc.Models.Employee", b =>
                 {
@@ -26,7 +26,7 @@ namespace PTPMQLMvc.Migrations
 
                     b.HasKey("EmployeeId");
 
-                    b.ToTable("Employee");
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("PTPMQLMvc.Models.Person", b =>
