@@ -1,0 +1,8 @@
+D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net8.0\PTPMQLMvc.csproj.AssemblyReference.cache
+D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net8.0\PTPMQLMvc.GeneratedMSBuildEditorConfig.editorconfig
+D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net8.0\PTPMQLMvc.AssemblyInfoInputs.cache
+D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net8.0\PTPMQLMvc.AssemblyInfo.cs
+D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net8.0\PTPMQLMvc.csproj.CoreCompileInputs.cache
+D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net8.0\PTPMQLMvc.MvcApplicationPartsAssemblyInfo.cache
+D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net8.0\PTPMQLMvc.RazorAssemblyInfo.cache
+D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net8.0\PTPMQLMvc.RazorAssemblyInfo.cs
