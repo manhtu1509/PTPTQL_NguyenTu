@@ -432,3 +432,14 @@ D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
 D:\PTPMQL_ManhTu\PTPMQLMvc\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\EPPlus.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\EPPlus.Interfaces.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Json.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\System.Security.Cryptography.Xml.dll
+D:\PTPMQL_ManhTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll

@@ -216,25 +216,18 @@ namespace PTPMQLMvc.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("PTPMQLMvc.Models.Employee", b =>
-                {
-                    b.Property<string>("EmployeeId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Age")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("EmployeeId");
-
-                    b.ToTable("Employee");
-                });
-
             modelBuilder.Entity("PTPMQLMvc.Models.Person", b =>
                 {
                     b.Property<string>("PersonId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(8)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("FullName")
@@ -243,6 +236,26 @@ namespace PTPMQLMvc.Migrations
                     b.HasKey("PersonId");
 
                     b.ToTable("Persons");
+
+                    b.HasDiscriminator().HasValue("Person");
+
+                    b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("PTPMQLMvc.Models.Employee", b =>
+                {
+                    b.HasBaseType("PTPMQLMvc.Models.Person");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("EmployeeId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.ToTable("Persons", (string)null);
+
+                    b.HasDiscriminator().HasValue("Employee");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
