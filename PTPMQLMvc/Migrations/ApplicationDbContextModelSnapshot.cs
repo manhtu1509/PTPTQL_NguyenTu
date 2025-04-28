@@ -225,11 +225,6 @@ namespace PTPMQLMvc.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("FullName")
                         .HasColumnType("TEXT");
 
@@ -237,9 +232,7 @@ namespace PTPMQLMvc.Migrations
 
                     b.ToTable("Persons");
 
-                    b.HasDiscriminator().HasValue("Person");
-
-                    b.UseTphMappingStrategy();
+                    b.UseTptMappingStrategy();
                 });
 
             modelBuilder.Entity("PTPMQLMvc.Models.Employee", b =>
@@ -253,9 +246,7 @@ namespace PTPMQLMvc.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.ToTable("Persons", (string)null);
-
-                    b.HasDiscriminator().HasValue("Employee");
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -305,6 +296,15 @@ namespace PTPMQLMvc.Migrations
                     b.HasOne("PTPMQLMvc.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("PTPMQLMvc.Models.Employee", b =>
+                {
+                    b.HasOne("PTPMQLMvc.Models.Person", null)
+                        .WithOne()
+                        .HasForeignKey("PTPMQLMvc.Models.Employee", "PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

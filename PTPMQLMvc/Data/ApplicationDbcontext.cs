@@ -14,13 +14,6 @@ namespace PTPMQLMvc.Data
         // Các DbSet cho các bảng khác trong cơ sở dữ liệu
         public DbSet<Person> Person { get; set; }
         public DbSet<Employee> Employees { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-            {
-                base.OnModelCreating(modelBuilder);
-
-                // Ánh xạ Person và Employee vào một bảng
-                modelBuilder.Entity<Employee>()
-                    .ToTable("Persons");  // Tên bảng chung cho Person và Employee
-            }
+        
     }
 }

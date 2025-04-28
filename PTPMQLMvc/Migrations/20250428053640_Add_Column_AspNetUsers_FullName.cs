@@ -6,11 +6,27 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PTPMQLMvc.Migrations
 {
     /// <inheritdoc />
-    public partial class AddEmployeeInheritance : Migration
+    public partial class Add_Column_AspNetUsers_FullName : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropPrimaryKey(
+                name: "PK_Employees",
+                table: "Employees");
+
+            migrationBuilder.AddColumn<string>(
+                name: "PersonId",
+                table: "Employees",
+                type: "TEXT",
+                nullable: false,
+                defaultValue: "");
+
+            migrationBuilder.AddPrimaryKey(
+                name: "PK_Employees",
+                table: "Employees",
+                column: "PersonId");
+
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -49,22 +65,6 @@ namespace PTPMQLMvc.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Persons",
-                columns: table => new
-                {
-                    PersonId = table.Column<string>(type: "TEXT", nullable: false),
-                    FullName = table.Column<string>(type: "TEXT", nullable: true),
-                    Address = table.Column<string>(type: "TEXT", nullable: true),
-                    Discriminator = table.Column<string>(type: "TEXT", maxLength: 8, nullable: false),
-                    EmployeeId = table.Column<string>(type: "TEXT", nullable: true),
-                    Age = table.Column<int>(type: "INTEGER", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Persons", x => x.PersonId);
                 });
 
             migrationBuilder.CreateTable(
@@ -209,11 +209,23 @@ namespace PTPMQLMvc.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Employees_Persons_PersonId",
+                table: "Employees",
+                column: "PersonId",
+                principalTable: "Persons",
+                principalColumn: "PersonId",
+                onDelete: ReferentialAction.Cascade);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Employees_Persons_PersonId",
+                table: "Employees");
+
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -230,13 +242,23 @@ namespace PTPMQLMvc.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Persons");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropPrimaryKey(
+                name: "PK_Employees",
+                table: "Employees");
+
+            migrationBuilder.DropColumn(
+                name: "PersonId",
+                table: "Employees");
+
+            migrationBuilder.AddPrimaryKey(
+                name: "PK_Employees",
+                table: "Employees",
+                column: "EmployeeId");
         }
     }
 }

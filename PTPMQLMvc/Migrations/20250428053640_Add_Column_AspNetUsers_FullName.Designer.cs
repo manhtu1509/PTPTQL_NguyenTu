@@ -11,7 +11,7 @@ using PTPMQLMvc.Data;
 namespace PTPMQLMvc.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250427192956_Add_Column_AspNetUsers_FullName")]
+    [Migration("20250428053640_Add_Column_AspNetUsers_FullName")]
     partial class Add_Column_AspNetUsers_FullName
     {
         /// <inheritdoc />
@@ -219,22 +219,10 @@ namespace PTPMQLMvc.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("PTPMQLMvc.Models.Employee", b =>
-                {
-                    b.Property<string>("EmployeeId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Age")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("EmployeeId");
-
-                    b.ToTable("Employee");
-                });
-
             modelBuilder.Entity("PTPMQLMvc.Models.Person", b =>
                 {
                     b.Property<string>("PersonId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Address")
@@ -246,6 +234,22 @@ namespace PTPMQLMvc.Migrations
                     b.HasKey("PersonId");
 
                     b.ToTable("Persons");
+
+                    b.UseTptMappingStrategy();
+                });
+
+            modelBuilder.Entity("PTPMQLMvc.Models.Employee", b =>
+                {
+                    b.HasBaseType("PTPMQLMvc.Models.Person");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("EmployeeId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -295,6 +299,15 @@ namespace PTPMQLMvc.Migrations
                     b.HasOne("PTPMQLMvc.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("PTPMQLMvc.Models.Employee", b =>
+                {
+                    b.HasOne("PTPMQLMvc.Models.Person", null)
+                        .WithOne()
+                        .HasForeignKey("PTPMQLMvc.Models.Employee", "PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
