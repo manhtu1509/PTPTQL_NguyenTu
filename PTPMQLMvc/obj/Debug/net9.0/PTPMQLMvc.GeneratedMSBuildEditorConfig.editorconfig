@@ -17,117 +17,117 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PTPMQLMvc
 build_property.RootNamespace = PTPMQLMvc
-build_property.ProjectDir = D:\PTPMQL_ManhTu\PTPMQLMvc\
+build_property.ProjectDir = C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\PTPMQL_ManhTu\PTPMQLMvc
+build_property.MSBuildProjectDirectory = C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Employee/Create.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Employee/Delete.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Employee/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Employee/Details.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Employee/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Employee/Edit.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Employee/Index.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/HelloWorld/IndexHelloWorld.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/HelloWorld/IndexHelloWorld.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxJbmRleEhlbGxvV29ybGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Home/Index.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Home/Privacy.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Person/Create.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Person/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Person/Delete.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Person/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Person/Edit.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Person/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Person/Index.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Person/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Person/PersonIndex.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Person/PersonIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXFBlcnNvbkluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Shared/Error.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/_ViewImports.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/_ViewStart.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PTPMQL_ManhTu/PTPMQLMvc/Views/Shared/_Layout.cshtml]
+[C:/Users/FPT SHOP/PTPTQL_NguyenTu/PTPMQLMvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-y6lkyw1j73

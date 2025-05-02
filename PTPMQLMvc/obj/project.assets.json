@@ -806,7 +806,7 @@
       "Microsoft.Build.Locator/1.7.8": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Build.Locator.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/Microsoft.Build.Locator.dll": {}
@@ -1292,11 +1292,8 @@
           "System.Text.Json": "7.0.3"
         },
         "compile": {
-          "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll": {
+          "lib/net7.0/_._": {
             "related": ".pdb;.runtimeconfig.json;.xml"
-          },
-          "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll": {
-            "related": ".BuildHost.pdb;.BuildHost.runtimeconfig.json;.BuildHost.xml;.pdb;.xml"
           }
         },
         "runtime": {
@@ -1531,7 +1528,7 @@
           "System.Text.Json": "9.0.4"
         },
         "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
@@ -8911,6 +8908,7 @@
       "EPPlus >= 8.0.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.4",
       "Microsoft.AspNetCore.Identity.UI >= 9.0.4",
+      "Microsoft.EntityFrameworkCore >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Abstractions >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "Microsoft.EntityFrameworkCore.SQLite >= 9.0.4",
@@ -8920,19 +8918,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tutu1\\.nuget\\packages\\": {}
+    "C:\\Users\\FPT SHOP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PTPMQL_ManhTu\\PTPMQLMvc\\PTPMQLMvc.csproj",
+      "projectUniqueName": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\PTPMQLMvc\\PTPMQLMvc.csproj",
       "projectName": "PTPMQLMvc",
-      "projectPath": "D:\\PTPMQL_ManhTu\\PTPMQLMvc\\PTPMQLMvc.csproj",
-      "packagesPath": "C:\\Users\\Tutu1\\.nuget\\packages\\",
-      "outputPath": "D:\\PTPMQL_ManhTu\\PTPMQLMvc\\obj\\",
+      "projectPath": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\PTPMQLMvc\\PTPMQLMvc.csproj",
+      "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\PTPMQLMvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tutu1\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -8974,11 +8972,17 @@
             "target": "Package",
             "version": "[9.0.4, )"
           },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.4, )"
+          },
           "Microsoft.EntityFrameworkCore.Abstractions": {
             "target": "Package",
             "version": "[9.0.4, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.4, )"
           },

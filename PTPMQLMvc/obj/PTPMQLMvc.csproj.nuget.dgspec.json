@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PTPMQL_ManhTu\\PTPMQLMvc\\PTPMQLMvc.csproj": {}
+    "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\PTPMQLMvc\\PTPMQLMvc.csproj": {}
   },
   "projects": {
-    "D:\\PTPMQL_ManhTu\\PTPMQLMvc\\PTPMQLMvc.csproj": {
+    "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\PTPMQLMvc\\PTPMQLMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PTPMQL_ManhTu\\PTPMQLMvc\\PTPMQLMvc.csproj",
+        "projectUniqueName": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\PTPMQLMvc\\PTPMQLMvc.csproj",
         "projectName": "PTPMQLMvc",
-        "projectPath": "D:\\PTPMQL_ManhTu\\PTPMQLMvc\\PTPMQLMvc.csproj",
-        "packagesPath": "C:\\Users\\Tutu1\\.nuget\\packages\\",
-        "outputPath": "D:\\PTPMQL_ManhTu\\PTPMQLMvc\\obj\\",
+        "projectPath": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\PTPMQLMvc\\PTPMQLMvc.csproj",
+        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\PTPMQLMvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tutu1\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -56,11 +56,17 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
               "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.4, )"
             },

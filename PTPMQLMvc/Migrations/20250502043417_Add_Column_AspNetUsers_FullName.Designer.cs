@@ -11,7 +11,7 @@ using PTPMQLMvc.Data;
 namespace PTPMQLMvc.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250428053640_Add_Column_AspNetUsers_FullName")]
+    [Migration("20250502043417_Add_Column_AspNetUsers_FullName")]
     partial class Add_Column_AspNetUsers_FullName
     {
         /// <inheritdoc />
