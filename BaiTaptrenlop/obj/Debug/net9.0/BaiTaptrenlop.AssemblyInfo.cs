@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BaiTaptrenlop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a4b474114ab16926004a6bf8f168a591ace49f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c44785455e8f496edbc5b49bc37904f16ad5e6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BaiTaptrenlop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BaiTaptrenlop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
