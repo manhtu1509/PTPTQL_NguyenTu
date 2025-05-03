@@ -46,7 +46,7 @@
           "dependencies": {
             "EPPlus": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[5.8.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

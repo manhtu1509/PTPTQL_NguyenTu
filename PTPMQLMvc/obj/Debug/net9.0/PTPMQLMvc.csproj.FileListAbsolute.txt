@@ -468,7 +468,6 @@ C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\PTPMQLMvc.pdb
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\EPPlus.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\EPPlus.Interfaces.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Humanizer.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -503,17 +502,12 @@ C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.EntityFra
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Json.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Embedded.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
@@ -564,9 +558,7 @@ C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.IdentityMode
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.Runtime.Caching.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.Security.Cryptography.Xml.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\af\Humanizer.resources.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\ar\Humanizer.resources.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\az\Humanizer.resources.dll
@@ -747,7 +739,6 @@ C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\win-arm64\
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\obj\Debug\net9.0\scopedcss\bundle\PTPMQLMvc.styles.css
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\obj\Debug\net9.0\scopedcss\projectbundle\PTPMQLMvc.bundle.scp.css
@@ -889,3 +880,9 @@ C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\obj\Debug\net9.0\staticwebassets.pac
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\obj\Debug\net9.0\PTPMQLMvc.csproj.Up2Date
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\obj\Debug\net9.0\PTPMQLMvc.genruntimeconfig.cache
 C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\obj\Debug\net9.0\ref\PTPMQLMvc.dll
+C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.Drawing.Common.dll
+C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\FPT SHOP\PTPTQL_NguyenTu\PTPMQLMvc\bin\Debug\net9.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
