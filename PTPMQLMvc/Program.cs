@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using PTPMQLMvc.Data;
 using PTPMQLMvc.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.Differencing;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,37 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 
 // Thêm các dịch vụ MVC (Controllers + Views)
 builder.Services.AddControllersWithViews();
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    //Default Lockout settings
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+    options.Lockout.MaxFailedAccessAttempts = 5;
+    options.Lockout.AllowedForNewUsers = true;
+    //config Password
+    options.Password.RequireDigit = true;
+    options.Password.RequiredLength = 8;
+    options.Password.RequireNonAlphanumeric= false;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireLowercase = false;
+    //config Login
+    options.SignIn.RequireConfirmedEmail = false;
+    options.SignIn.RequireConfirmedPhoneNumber = false;
+    //config User
+    options.User.RequireUniqueEmail = true;
+});
+builder.Services.ConfigureApplicationCookie(options => 
+{
+    options.Cookie.HttpOnly = true;
+    //chi gui cooke qua HTTPS
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+    //Giam thieu rui ro CSRF
+    options.Cookie.SameSite = SameSiteMode.Lax;
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath ="/Account/AccessDenied";
+    options.SlidingExpiration = true;
 
+});
 var app = builder.Build();
 
 // Cấu hình các middleware trong pipeline

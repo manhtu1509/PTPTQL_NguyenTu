@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using AspNetCoreGeneratedDocument;
+//using AspNetCoreGeneratedDocument;
 
 namespace PTPMQLMvc.Models
 {
@@ -8,7 +8,7 @@ namespace PTPMQLMvc.Models
     public class Employee : Person
     {
       
-        public string EmployeeId { get; set; }
+        public string? EmployeeId { get; set; }
         public int Age { get; set; }
     }
 }
