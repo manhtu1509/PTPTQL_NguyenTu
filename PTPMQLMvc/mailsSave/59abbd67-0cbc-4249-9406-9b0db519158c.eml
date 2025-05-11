@@ -1,0 +1,10 @@
+From: Administrator <youremail@example.com>
+Date: Sun, 11 May 2025 21:21:23 +0700
+Subject: Confirm your email
+Message-Id: <ZZRA4J7T4QU4.84HBQS4PPWFD2@laptop-ql8vlqul>
+Sender: Administrator <youremail@example.com>
+To: nguyenmanhtu1509@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+Please confirm your account by <a href='http://localhost:5292/Identity/Account/ConfirmEmail?userId=c5ed5721-3250-48d2-a2d0-504a9041f0ba&amp;code=Q2ZESjhMd3NQbmhJLzhkS3N0Y2k2TzdPVk5Dc1JVN04zakptb2ZYSHhKRTNYU3Vub1lNM1dKQURUaGdNUFFNOERuWXNNcXVWSnAzTUFoZXFFMlN0NVNrK2dEMitwTmtGT1dIOWhIT25mdFVaR25wSXFKSktkMHZDRy9WVVkvQ3NNUEhGbTJlR0t5YUY2aDFWNTQ1c3RnM1hSVDVPZENOU2VnYk1Pa3huOUg5S0lWdlIxcDBHTHhFY0lvWDJRRkVqUFdJVldFSHNYY1BWcTc0M3h3UlZsS3dEUTNVUGZDY2IwRmhHUkM1R3EzTmhic2VxbktPRFlMcm9oamJwbEJSMURiUkxLZz09&amp;returnUrl=%2F'>clicking here</a>.

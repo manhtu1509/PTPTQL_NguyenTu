@@ -3,9 +3,14 @@ using PTPMQLMvc.Data;
 using PTPMQLMvc.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.CodeAnalysis.Differencing;
+using PTPMQLMvc.Models.Process;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddOptions();
+var mailSettings = builder.Configuration.GetSection("MailSettings");
+builder.Services.Configure<MailSettings>(mailSettings);
+builder.Services.AddTransient<IEmailSender, SendMailService>();
 // Cấu hình DbContext để sử dụng SQLite
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")
