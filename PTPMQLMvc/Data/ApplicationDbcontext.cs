@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PTPMQLMvc.Models.Entities;
 using PTPMQLMvc.Models;
 
 
@@ -16,7 +17,7 @@ namespace PTPMQLMvc.Data
 
        
         public DbSet<Person> Person { get; set; }
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Employee> Employees { get; set; } = null! ;
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

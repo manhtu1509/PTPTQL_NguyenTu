@@ -3,6 +3,7 @@ using MimeKit;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Options;
 using MailKit.Security;
+
 namespace PTPMQLMvc.Models.Process
 {
     public class SendMailService : IEmailSender
