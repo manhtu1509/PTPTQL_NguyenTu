@@ -1,10 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using PTPMQLMvc.Data;
-using PTPMQLMvc.Models.Entities; // Đảm bảo sử dụng đúng namespace của Employee
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using PTPMQLMvc.Models.Process;
-using Microsoft.AspNetCore.HttpOverrides;
 using PTPMQLMvc.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,7 +21,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Cấu hình Identity với ApplicationUser
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
-
 // Thêm các dịch vụ MVC (Controllers + Views)
 builder.Services.AddTransient<EmployeeSeeder>(); // Đảm bảo service này được thêm vào container
 

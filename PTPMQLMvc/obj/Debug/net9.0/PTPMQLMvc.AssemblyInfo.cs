@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PTPMQLMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+528ff322e7ecc79bda89546af507b603ae0a401e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db5dd206e1f8d92cc838622188b94406d2ab9c14")]
 [assembly: System.Reflection.AssemblyProductAttribute("PTPMQLMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PTPMQLMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
