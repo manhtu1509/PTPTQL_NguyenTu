@@ -18,4 +18,4 @@ namespace PTPMQLMvc.Controllers
             return View(users);
         }
     }
-}
+}   

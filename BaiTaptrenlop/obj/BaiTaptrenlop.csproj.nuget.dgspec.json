@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PTPMQL_ManhTu\\BaiTaptrenlop\\BaiTaptrenlop.csproj": {}
+    "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\BaiTaptrenlop\\BaiTaptrenlop.csproj": {}
   },
   "projects": {
-    "D:\\PTPMQL_ManhTu\\BaiTaptrenlop\\BaiTaptrenlop.csproj": {
+    "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\BaiTaptrenlop\\BaiTaptrenlop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PTPMQL_ManhTu\\BaiTaptrenlop\\BaiTaptrenlop.csproj",
+        "projectUniqueName": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\BaiTaptrenlop\\BaiTaptrenlop.csproj",
         "projectName": "BaiTaptrenlop",
-        "projectPath": "D:\\PTPMQL_ManhTu\\BaiTaptrenlop\\BaiTaptrenlop.csproj",
-        "packagesPath": "C:\\Users\\Tutu1\\.nuget\\packages\\",
-        "outputPath": "D:\\PTPMQL_ManhTu\\BaiTaptrenlop\\obj\\",
+        "projectPath": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\BaiTaptrenlop\\BaiTaptrenlop.csproj",
+        "packagesPath": "C:\\Users\\FPT SHOP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FPT SHOP\\PTPTQL_NguyenTu\\BaiTaptrenlop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tutu1\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FPT SHOP\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

@@ -1,10 +1,5 @@
 using System.Data;
-using System.Xml;
 using OfficeOpenXml;
-
-using System.IO;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace PTPMQLMvc.Models.Process
 {

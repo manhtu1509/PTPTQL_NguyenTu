@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Encodings.Web;
 namespace PTPMQLMvc.Controllers
 {
     public class HelloWorldController : Controller

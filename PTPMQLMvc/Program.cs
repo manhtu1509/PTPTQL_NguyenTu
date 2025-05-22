@@ -65,7 +65,7 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var seeder = services.GetRequiredService<EmployeeSeeder>();
-    seeder.SeedEmployees(1000);  // Seeding 1000 nhân viên
+    seeder.SeedEmployees(1000);  
 }
 
 // Cấu hình các middleware trong pipeline
