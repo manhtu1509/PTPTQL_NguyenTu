@@ -5,6 +5,7 @@ using PTPMQLMvc.Models;
 
 namespace PTPMQLMvc.Controllers
 {
+
     public class RoleController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -17,5 +18,53 @@ namespace PTPMQLMvc.Controllers
             var roles = await _roleManager.Roles.ToListAsync();
             return View();
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(string roleName)
+        {
+            if (!string.IsNullOrEmpty(roleName))
+            {
+                var role = new IdentityRole(roleName.Trim());
+                await _roleManager.CreateAsync(role);
+            }
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> Edit(string id)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                return NotFound();
+            }
+            return View();
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(string id, string newName)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                return NotFound();
+            }
+            role.Name = newName;
+            await _roleManager.UpdateAsync(role);
+            return RedirectToAction("Index");
+
+        }
+        public async Task<IActionResult> Delete(string id)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role != null)
+            {
+                await _roleManager.DeleteAsync(role);
+
+            }
+            return RedirectToAction("Index");
+        }
     }
+    
 }
