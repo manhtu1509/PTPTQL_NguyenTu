@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace PTPMQLMvc.Controllers
 {
-    [Authorize]
+    [Authorize(Policy = "Permission")]
     public class EmployeeController : Controller
     {
 
@@ -24,7 +24,7 @@ namespace PTPMQLMvc.Controllers
         {
             return View(await _context.Employees.ToListAsync());
         }
-        [Authorize]
+        [Authorize(Roles ="Employee")]
 
         // GET: Employee/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -43,7 +43,7 @@ namespace PTPMQLMvc.Controllers
 
             return View(employee);
         }
-        [Authorize]
+        [Authorize(Policy = "Role")]
         // GET: Employee/Create
         public IActionResult Create()
         {
@@ -67,6 +67,7 @@ namespace PTPMQLMvc.Controllers
         }
 
         // GET: Employee/Edit/5
+        [Authorize (Roles ="Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)

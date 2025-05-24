@@ -1,0 +1,16 @@
+@using PTPMQLMvc.Models.ViewModel
+@model AssignRolesVM
+<h2>Assign Role </h2>
+<hr>
+<form asp-action="AssignRole" method="post">
+    @foreach (var role in Model.ALLRoles)
+    {
+        <div>
+            <input class="checkbox" type="checkbox" id="@role.Id" name="SelectionRoles" value="@role.Name"
+                @(Model.SelectionRoles !=null && Model.SelectionRoles.Contains(role.Name)? "checked": "")>
+            <label for="@role.Id">@role.Name</label>
+        </div>
+    }
+    <input type="hidden" name="UserId" value="@Model.UserId">
+    <button type="submit" class="btn btn-primary">Assign Role</button>
+</form>

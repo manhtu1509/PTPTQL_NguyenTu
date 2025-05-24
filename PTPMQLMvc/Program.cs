@@ -1,13 +1,16 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using PTPMQLMvc.Data;
 using PTPMQLMvc.Models;
 using PTPMQLMvc.Models.Process;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Cấu hình MailSettings
+// Cấu hình MailSettingscdcd 
 builder.Services.AddOptions();
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddTransient<IEmailSender, SendMailService>();
@@ -59,7 +62,27 @@ builder.Services.ConfigureApplicationCookie(options =>
 // Đăng ký Razor Pages & MVC
 builder.Services.AddRazorPages();
 builder.Services.AddControllersWithViews();
+builder.Services.AddAuthorization(options =>
+{
+    foreach (var permission in Enum.GetValues(typeof(SystemPermission)).Cast<SystemPermission>())
+    {
+        options.AddPolicy(permission.ToString(), policy =>
+        policy.RequireClaim("Permission", permission.ToString()));
+    }
+    options.AddPolicy("Role", policy => policy.RequireClaim("Role", "AdminOnly"));
+    options.AddPolicy("Permission", policy => policy.RequireClaim("Role", "EmployeeOnly"));
+    options.AddPolicy("PolicyAdmin", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("PolicyEmployee", policy => policy.RequireRole("Employee"));
+    options.AddPolicy("PolicyByPhoneNumber", policy => policy.Requirements.Add(new PolicyByPhoneNumberRequirement()));
+});
+builder.Services.AddSingleton<IAuthorizationHandler, PolicyByPhoneNumberHandler>();
 builder.Services.AddTransient<EmployeeSeeder>();
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = $"/Identity/Account/Login";
+    options.LogoutPath = $"/Identity/Account/Logout";
+    options.AccessDeniedPath = $"/Identity/Account/AccessDenie";
+});
 
 var app = builder.Build();
 

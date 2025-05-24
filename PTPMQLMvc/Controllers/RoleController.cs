@@ -1,11 +1,13 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PTPMQLMvc.Models;
+using PTPMQLMvc.Models.Process;
+using PTPMQLMvc.Models.ViewModel;
 
 namespace PTPMQLMvc.Controllers
 {
-
     public class RoleController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -13,15 +15,18 @@ namespace PTPMQLMvc.Controllers
         {
             _roleManager = roleManger;
         }
+
         public async Task<IActionResult> Index()
         {
             var roles = await _roleManager.Roles.ToListAsync();
-            return View();
+            return View(roles);
         }
+
         public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(string roleName)
         {
@@ -32,6 +37,7 @@ namespace PTPMQLMvc.Controllers
             }
             return RedirectToAction("Index");
         }
+
         public async Task<IActionResult> Edit(string id)
         {
             var role = await _roleManager.FindByIdAsync(id);
@@ -39,9 +45,9 @@ namespace PTPMQLMvc.Controllers
             {
                 return NotFound();
             }
-            return View();
-
+            return View(role);
         }
+
         [HttpPost]
         public async Task<IActionResult> Edit(string id, string newName)
         {
@@ -53,18 +59,70 @@ namespace PTPMQLMvc.Controllers
             role.Name = newName;
             await _roleManager.UpdateAsync(role);
             return RedirectToAction("Index");
-
         }
+
         public async Task<IActionResult> Delete(string id)
         {
             var role = await _roleManager.FindByIdAsync(id);
             if (role != null)
             {
                 await _roleManager.DeleteAsync(role);
-
             }
             return RedirectToAction("Index");
         }
+
+        public async Task<IActionResult> AssignClaim(string id)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                return BadRequest();
+            }
+            var allPermission = Enum.GetValues(typeof(SystemPermission)).Cast<SystemPermission>().Select(p => p.ToString()).ToList();
+            var roleClaims = await _roleManager.GetClaimsAsync(role);
+            if (roleClaims == null)
+            {
+                roleClaims = new List<Claim>();
+            }
+            var model = new RoleClaimVM
+            {
+                RoleId = role.Id,
+                RoleName = role.Name,
+                Claims = allPermission.Select(p => new RoleClaim
+                {
+                    Type = "Permission",
+                    Value = p,
+                    Selected = roleClaims.Any(c => c.Type == "Permission" && c.Value == p)
+                }).ToList()
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AssignClaim(RoleClaimVM model)
+        {
+            if (!ModelState.IsValid)
+            { return View(model); }
+            var role = await _roleManager.FindByIdAsync(model.RoleId);
+            if (role == null)
+            {
+                return BadRequest();
+            }
+            var claims = await _roleManager.GetClaimsAsync(role);
+            if (claims == null)
+            {
+                claims = new List<Claim>();
+                foreach (var claim in claims.Where(c => c.Type == "Permission").ToList())
+                {
+                    await _roleManager.RemoveClaimAsync(role, claim);
+                }
+                foreach (var claim in model.Claims.Where(c => c.Selected))
+                {
+                    await _roleManager.AddClaimAsync(role, new Claim(claim.Type, claim.Value));
+                }
+                return RedirectToAction(nameof(Index));
+            }
+        }
     }
-    
 }
