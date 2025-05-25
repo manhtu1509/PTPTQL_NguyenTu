@@ -103,26 +103,33 @@ namespace PTPMQLMvc.Controllers
         public async Task<IActionResult> AssignClaim(RoleClaimVM model)
         {
             if (!ModelState.IsValid)
-            { return View(model); }
+            {
+                return View(model);
+            }
+
             var role = await _roleManager.FindByIdAsync(model.RoleId);
             if (role == null)
             {
                 return BadRequest();
             }
+
             var claims = await _roleManager.GetClaimsAsync(role);
-            if (claims == null)
+
+            
+            foreach (var claim in claims.Where(c => c.Type == "Permission").ToList())
             {
-                claims = new List<Claim>();
-                foreach (var claim in claims.Where(c => c.Type == "Permission").ToList())
-                {
-                    await _roleManager.RemoveClaimAsync(role, claim);
-                }
-                foreach (var claim in model.Claims.Where(c => c.Selected))
-                {
-                    await _roleManager.AddClaimAsync(role, new Claim(claim.Type, claim.Value));
-                }
-                return RedirectToAction(nameof(Index));
+                await _roleManager.RemoveClaimAsync(role, claim);
             }
+
+            
+            foreach (var claim in model.Claims.Where(c => c.Selected))
+            {
+                await _roleManager.AddClaimAsync(role, new Claim(claim.Type, claim.Value));
+            }
+
+            
+            return RedirectToAction(nameof(Index));
         }
+
     }
 }
